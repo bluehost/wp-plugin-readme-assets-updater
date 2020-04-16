@@ -9,6 +9,7 @@ The main differences are that this version:
 * Only looks at the readme file and assets. Other changes to the specified branch are ignored.
 * Does not require executing any build steps inside the action if your plugin uses those (Example: `composer install`, `npm install`, etc.)
 * Will generate an error and not deploy the changes if the tag specified by the `Stable tag` header is not found in the WordPress plugin repository. (Technically this is something that is permitted by the plugin repository system, as it will fall back to using `trunk`, but best practice is to also push a tag if one is specified in the `Stable tag` plugin header. If you don't want to use tags in SVN, you can omit that header or use `trunk`.)
+* Uses a default value of `.wporg` for the assets directory
 
 ## Details
 This Action pushes any changes to the readme and/or assets used by the WordPress.org plugin repository in the branch specified by the workflow file to the SVN repo on WordPress.org. This is useful for updating things like screenshots or `Tested up to` separately from functional changes.
