@@ -39,10 +39,10 @@ name: Plugin asset/readme update
 on:
   push:
     branches:
-	  - master
-	paths:
-	  - .wporg/*
-	  - readme.txt
+      - master
+    paths:
+      - .wporg/*
+      - readme.txt
 jobs:
   master:
     name: Push to master
