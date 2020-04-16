@@ -1,0 +1,9 @@
+name: 'WordPress Plugin Repository Assets & Readme Updater'
+description: 'Push only assets and readme.txt updates to the WordPress Plugin Repository'
+author: 'Bluehost'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'upload-cloud'
+  color: 'gray-dark'
