@@ -19,7 +19,7 @@ fi
 echo "ℹ️ SLUG is $SLUG"
 
 if [[ -z "$ASSETS_DIR" ]]; then
-	ASSETS_DIR=".wporg"
+	ASSETS_DIR=".wordpress-org"
 fi
 echo "ℹ️ ASSETS_DIR is $ASSETS_DIR"
 
